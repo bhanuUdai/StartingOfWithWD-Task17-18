@@ -105,11 +105,12 @@ let myform=document.querySelector('#my-form');
 let myname=document.querySelector('#name');
 let mymail=document.querySelector('#email');
 let unordered=document.querySelector('.items')
-myform.addEventListener('submit',onclick)
+
+myform.addEventListener('submit',onclick)   ///event listener works on singular selector i.e .querySelector
 
 function onclick(e)
 {
-  e.preventDefault();
+  e.preventDefault();         
 if(myname.value=='' || mymail.value=='')
 {
   alert('fill the blanks')
